@@ -1,0 +1,6 @@
+description: A self-describing Node.js sample application
+images:
+  - image: ibmcom/icp-nodejs-sample
+  - image: ibmcom/icp-nodejs-sample-amd64
+  - image: ibmcom/icp-nodejs-sample-ppc64le
+  - image: ibmcom/icp-nodejs-sample-s390x

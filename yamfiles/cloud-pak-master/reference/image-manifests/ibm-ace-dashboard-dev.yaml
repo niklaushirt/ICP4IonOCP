@@ -1,0 +1,6 @@
+description: IBM App Connect Enterprise dashboard
+images:
+  - image: alpine
+  - image: ibmcom/ace-content-server
+  - image: ibmcom/ace-dashboard
+  - image: ibmcom/ace-icp-configurator

@@ -1,0 +1,11 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: glustersc
+  namespace: icp
+provisioner: kubernetes.io/glusterfs
+parameters:
+  resturl: "http://192.168.27.190:8888"
+  clusterid: "61f03e93646d435ced9185e7fa6c5d6f"
+  restauthenabled: "false"
+  volumetype: none

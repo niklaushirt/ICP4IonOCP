@@ -1,0 +1,63 @@
+# Licensed Materials - Property of IBM
+# IBM Cloud private
+# @ Copyright IBM Corp. 2019 All Rights Reserved
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+
+---
+
+# A list of OpenShift nodes that used to run ICP components
+cluster_nodes:
+  master:
+    - cassioopenshift.ibm.cloud
+  proxy:
+    - cassioopenshift.ibm.cloud
+  management:
+    - cassioopenshift.ibm.cloud
+
+storage_class: glustersc
+
+openshift:
+  console:
+    host: https://console.169.57.168.123.nip.io
+    port: 8443
+  router:
+    cluster_host: icp-console.169.57.168.123.nip.io
+    proxy_host: icp-proxy.169.57.168.123.nip.io
+
+default_admin_password: ICP4Integration
+password_rules:
+- '(.*)'
+
+## You must have different ports if you deploy nginx ingress to OpenShift master node
+# ingress_http_port: 80
+# ingress_https_port: 443
+
+kubernetes_cluster_type: openshift
+## You can disable following services if they are not needed
+## Disabling services may impact the installation of IBM CloudPaks.
+## Proceed with caution and refer to the Knowledge Center document for specific considerations.
+# auth-idp
+# auth-pap
+# auth-pdp
+# catalog-ui
+# helm-api
+# helm-repo
+# icp-management-ingress
+# metering
+# metrics-server
+# mgmt-repo
+# monitoring
+# nginx-ingress
+# oidcclient-watcher
+# platform-api
+# platform-ui
+# secret-watcher
+# security-onboarding
+# web-terminal
+
+management_services:
+  monitoring: enabled
+  metering: enabled
+  logging: disabled
+  custom-metrics-adapter: disabled
+  platform-pod-security: enabled

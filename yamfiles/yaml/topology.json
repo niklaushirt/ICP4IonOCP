@@ -1,0 +1,27 @@
+{
+  "clusters": [
+    {
+      "nodes": [
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "192.168.27.190"
+              ],
+              "storage": [
+                "192.168.27.190"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+              {
+                  "name":"/dev/xvdc",
+                  "destroydata": false
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
